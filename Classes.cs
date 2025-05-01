@@ -152,35 +152,3 @@ public class Book
         Author = author;
     }
 }
-
-class Program
-{
-    static void Main()
-    {
-        Person person = new Person("Alice");
-        Console.WriteLine($"Person Name: {person.Name}");
-
-        Circle circle = new Circle(5);
-        Console.WriteLine($"Circle Radius: {circle.Radius}, Area: {circle.Area}");
-
-        Student student = new Student(18);
-        Console.WriteLine($"Student Age: {student.Age}");
-
-        Temperature temp = new Temperature(25);
-        Console.WriteLine($"Temperature: {temp.Celsius}°C, {temp.Fahrenheit}°F");
-
-        Employee employee = new Employee(3000);
-        Console.WriteLine($"Employee Salary: {employee.Salary}");
-
-        BankAccount account = new BankAccount(500);
-        account.Deposit(200);
-        account.Withdraw(100);
-        Console.WriteLine($"BankAccount Balance: {account.Balance}");
-
-        Rectangle rect = new Rectangle(4, 7);
-        Console.WriteLine($"Rectangle: Width={rect.Width}, Height={rect.Height}, Perimeter={rect.Perimeter}");
-
-        Book book = new Book("C# in Depth", "Jon Skeet");
-        Console.WriteLine($"Book: {book.Title} by {book.Author}");
-    }
-}
